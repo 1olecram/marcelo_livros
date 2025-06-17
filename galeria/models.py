@@ -7,4 +7,4 @@ class Livro(models.Model):
     foto =  models.CharField(max_length=100, null=False, blank=False)
 
     def __str__(self):
-        return f"Livro [nome={self.nome}]"
+        return f"Livro [titulo={self.titulo}]"
