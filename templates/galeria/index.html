@@ -41,7 +41,7 @@
                         {%if cards%}
                         {% for livro in cards%}
                         <li class="card">
-                            <a href="{% url 'imagem' %}">
+                            <a href="{% url 'imagem' livro.id %}">
                                 <img class="card__imagem" src="{% static '/assets/imagens/galeria/'%}{{livro.foto}}"alt="foto">
                             </a>
                             <span class="card__tag">Estrelas</span>
